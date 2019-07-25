@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'semamore'
+
+command = ARGV[0]
+pattern = ARGV[1]
+
+semamore = Semamore.new(token: ENV['GITHUB_TOKEN'])
+
+semamore.changed_files_guard(repo: ENV['SEMAPHORE_REPO_SLUG'], branch: ENV['BRANCH_NAME'], command: command, pattern: pattern)
