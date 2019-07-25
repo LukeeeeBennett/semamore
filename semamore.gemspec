@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Luke Bennett']
   s.email       = 'contact@luke.run'
   s.files       = ['lib/semamore.rb', 'lib/semamore_octo_client.rb']
+  s.add_runtime_dependency "octokit", ['= 4.14.0']
   s.executables << 'semamore'
   s.homepage    = 'https://gitlab.com/LukeeeeBennett/semamore'
   s.license     = 'MIT'
